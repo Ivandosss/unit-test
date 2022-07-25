@@ -13,32 +13,23 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## SUMÁRIO
 
-- [Boas vindas ao repositório do projeto de Trivia!](#boas-vindas-ao-repositório-do-projeto-de-trivia)
-- [Sumário](#sumário)
-- [Habilidades](#habilidades)
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-será-desenvolvido)
+- [Boas vindas ao repositório do projeto de ES6 e Testes Unitários!](#boas-vindas-ao-repositório-do-projeto-de-es6-e-testes-unitários)
+  - [SUMÁRIO](#sumário)
+  - [Habilidades](#habilidades)
+  - [O que será desenvolvido](#o-que-será-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [ESLint](#eslint)
-- [Requisitos do projeto](#requisitos-do-projeto)
-- [Lista de requisitos](#lista-de-requisitos)
-  - [Implemente a função average](#1---implemente-a-função-average)
-  - [Implemente os casos de teste para a função numbers](#2---implemente-os-casos-de-teste-para-a-função-numbers)
-  - [Implemente a função vqv](#3---implemente-a-função-vqv)
-  - [Implemente os casos de teste para a função circle](#4---implemente-os-casos-de-teste-para-a-função-circle)
-  - [Implemente a função createStudent](#5---implemente-a-função-createstudent)
-  - [Implemente os casos de teste para a função productDetails](#6---implemente-os-casos-de-teste-para-a-função-productdetails)
-  - [Implemente a função objCalculator](#7---implemente-a-função-objcalculator)
-  - [Implemente a função myCounter](#8---implemente-a-função-mycounter)
-  - [Implemente os casos de teste e a função createMenu](#9---implemente-os-casos-de-teste-e-a-função-createmenu)
-- [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Revisando um pull request](#revisando-um-pull-request)
-- [Avisos finais](#avisos-finais)
+  - [Como desenvolver](#como-desenvolver)
+    - [EsLint](#eslint)
+  - [Requisitos do projeto](#requisitos-do-projeto)
+    - [1 - Implemente a função `average`](#1---implemente-a-função-average)
+    - [2 - Implemente os casos de teste para a função `numbers`](#2---implemente-os-casos-de-teste-para-a-função-numbers)
+    - [3 - Implemente a função `vqv`](#3---implemente-a-função-vqv)
+    - [4 - Implemente os casos de teste para a função `circle`](#4---implemente-os-casos-de-teste-para-a-função-circle)
+    - [5 - Implemente a função `createStudent`](#5---implemente-a-função-createstudent)
+    - [6 - Implemente os casos de teste para a função `productDetails`](#6---implemente-os-casos-de-teste-para-a-função-productdetails)
+    - [7 - Implemente a função `objCalculator`](#7---implemente-a-função-objcalculator)
+    - [8 - Implemente a função `myCounter`](#8---implemente-a-função-mycounter)
+    - [9 - Implemente os casos de teste e a função `createMenu`](#9---implemente-os-casos-de-teste-e-a-função-createmenu)
 
 ---
 
@@ -50,16 +41,6 @@ Nesse projeto, você será capaz de:
 - A partir de testes já implementados, escrever funções de forma que elas atendam aos testes propostos;
 - Escrever testes e funções utilizando uma abordagem de desenvolvimento orientado a testes.
 
----
-
-# Entregáveis
-
-Para entregar o seu projeto você deverá criar um Pull Request neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre
-[Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
-
----
 
 ## O que será desenvolvido
 
@@ -78,88 +59,6 @@ Você implementará várias funções para atender aos requisitos propostos e/ou
 
 ---
 
-## Data de entrega
-
-  - Projeto individual;
-
-  - Será um dia de projeto;
-
-  - Data de entrega para avaliação final do projeto: `29/06/2021 - 14:00h`
-
----
-
-# Instruções para entregar seu projeto:
-
-## Antes de começar a desenvolver:
-
-1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-013-a-project-js-unit-tests.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-013-a-project-js-unit-tests`
-
-2. Instale as dependências
-  * `npm install`
-
-3. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora crie uma branch para qual você vai submeter os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-js-unit-tests`
-
-4. Faça as alterações em, por exemplo, alguma das funções que precisam de implementação. Por exemplo, a `average.js` em `src/`:
-```jsx
-const average = () => {
-  // add your implementation here
-}
-
-module.exports = average
-```
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer listado o arquivo _src/last.js_ em vermelho)
-  * Adicione o arquivo alterado ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        * `git status` (deve aparecer listado o arquivo _src/last.js_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-6. Adicione a sua branch com o novo `commit` ao repositório remoto
-  * Usando o exemplo anterior: `git push -u origin joaozinho-js-unit-tests`
-
-7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-013-a-project-js-unit-tests/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-013-a-project-js-unit-tests/pulls) e confira que o seu _Pull Request_ está criado
-
----
-
-## Durante o desenvolvimento
-
-:warning: **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** :warning:
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
 
 ## Como desenvolver
 
@@ -328,43 +227,3 @@ A estrutura deste código e deste objeto já foi definida e você irá implement
   10. No arquivo `tests/restaurant.spec.js`, escreva um teste que verifica se a função `order` aceita que pedidos repetidos sejam acrescidos a consumption.
   11. No arquivo `tests/restaurant.spec.js`, escreva um teste que verifica que, ao chamar `objetoRetornado.pay()`, retorna-se a soma dos preços de tudo que foi pedido, conforme registrado em `objetoRetornado.consumption`.
   12. No arquivo `src/restaurant.js`, adicione ao objeto retornado por `createMenu()` uma chave `pay` com uma função que varre todo os itens de `objetoRetornado.consumption`, soma o preço de todos checando-os no menu e retorna o valor somado acrescido de 10%. DICA: para isso, você precisará varrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
-
-
-  **O que será avaliado**
-
-  * Será validado se a função `createMenu` retorna os dados esperados.
-  * Será validado se o teste da função `createMenu` verifica cada um dos retornos da função e se estes retornos têm o comportamento esperado.
-
----
-
-## Depois de terminar o desenvolvimento (opcional)
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-013-a`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-### Revisando um pull request
-
-Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-#VQV
-
----
-
-## Avisos finais
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
-
----
